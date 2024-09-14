@@ -10,7 +10,7 @@ public:
   void set_data(int x, int y);
   void show_data() {
     cout << "a: " << a << ", b: " << b << "i";
-  }
+  } 
   Complex add(Complex c1) {
     Complex ans;
     ans.a = a + c1.a;
@@ -34,5 +34,8 @@ int main() {
   c2.set_data(4, 7);
   Complex c3 = c1.add(c2);
   c3.show_data();
+  cout<<endl<<"Size: "<<sizeof(c1);
+  cout<<endl<<"Size: "<<sizeof(c2);
+  cout<<endl<<"Size: "<<sizeof(c3);
   return 0;
 }

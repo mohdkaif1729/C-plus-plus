@@ -6,8 +6,8 @@ private:
   int a, b;
 
 public:
-  // default it is inline
   void set_data(int x, int y);
+  // default it is inline
   void show_data() {
     cout << "a: " << a << ", b: " << b;
   }
